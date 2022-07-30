@@ -2,14 +2,14 @@ import React, {useState}from 'react';
 import {View,Text, ScrollView,Image, TextInput, TouchableOpacity, Alert} from 'react-native';
 import { styles } from '../../styles'
 export default() => {
-    const [altitude, setAltitude] = useState(0);
-    const [temperatura, setTemperatura] = useState(0);
-    const [od, setOd] = useState(0);
+    const [altitude, setAltitude] = useState('');
+    const [temperatura, setTemperatura] = useState('');
+    const [od, setOd] = useState('');
     const [coli, setColi] = useState('');
-    const [ph, setPh] = useState(0);
+    const [ph, setPh] = useState('');
     const [dbo5, setDbo5] = useState('');
-    const [nitrogenio, setNitrogenio] = useState(0);
-    const [fosforo, setFosforo] = useState(0);
+    const [nitrogenio, setNitrogenio] = useState('');
+    const [fosforo, setFosforo] = useState('');
     const [turbidez, setTurbidez] = useState('');
     const [solidos, setSolidos] = useState('');
     let pesoOd=0.17
