@@ -1,9 +1,12 @@
+import { NavigationContainer } from '@react-navigation/native';
 import React, { Component } from 'react';
-import Home from '../IQA-Version2/src/screens/Home'
-export default class IQA extends Component {
-  render(){
-    return(
-        <Home/>
-      );
-  }
+import MainStack from '../IQA-Version2/src/navigators/MainStack'
+import MainTab from './src/navigators/MainTab';
+function App(){
+  return(
+    <NavigationContainer>
+      <MainTab />
+    </NavigationContainer>
+  );
 }
+export default App;

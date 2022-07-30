@@ -1,6 +1,7 @@
 import React, {useState}from 'react';
 import {View,Text, ScrollView,Image, TextInput, TouchableOpacity, Alert} from 'react-native';
 import { styles } from '../../styles'
+
 export default() => {
     const [altitude, setAltitude] = useState('');
     const [temperatura, setTemperatura] = useState('');
@@ -172,7 +173,6 @@ export default() => {
             qiSolidos=32
         }
     }
-
         return(
             <View style={styles.body}>
                 <View style={styles.areaImage} >
