@@ -1,7 +1,7 @@
 import React from "react";
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
-import TabHomeScreen from '../screens/Home'
-import TabFindScreen from '../screens/Find'
+import TabHomeScreen from '../screens/RegisterLocation'
+import TabSearchScreen from '../screens/Search'
 import {Image} from 'react-native'
 
 const Tab = createBottomTabNavigator();
@@ -26,6 +26,6 @@ export default () => (
     }
     >
         <Tab.Screen name="Home" component={TabHomeScreen} options={{headerShown: false}}/>
-        <Tab.Screen name="Search" component={TabFindScreen} options={{headerShown: false}}/>
+        <Tab.Screen name="Search" component={TabSearchScreen} options={{headerShown: false}}/>
     </Tab.Navigator>
 )

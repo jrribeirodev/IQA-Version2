@@ -5,8 +5,6 @@ const styles = StyleSheet.create({
     body:{
         flex:1,
         backgroundColor:'#ADD8E6',
-        paddingBottom:20
-
     },
     areaImage:{
         paddingTop:50,
@@ -19,6 +17,37 @@ const styles = StyleSheet.create({
     areaInfo:{
         alignItems:'center'
     },
+    searchArea: {
+        flex:1,
+height:'100%',        width: '95%',
+        alignSelf: 'center',
+        backgroundColor: '#fff',
+        borderTopLeftRadius: 20,
+        borderTopRightRadius: 20,
+        marginTop: 10,
+     },
+     resultTextArea: {
+        height: '100%',
+        flex: 1,
+        borderLeftWidth: 0.55,
+        justifyContent: 'center',
+        borderLeftColor: '#0000002f',
+     }, 
+     searchResultArea: {
+        height: '100%',
+        width: '100%',
+        alignItems: 'center',
+        alignSelf:'center',
+        marginTop: 15,
+        paddingTop:20
+     },
+
+                          resultSeparator: {
+                            width: '80%',
+                            borderTopWidth: 0.55,
+                            alignSelf: 'center',
+                            borderColor: '#0000002f',
+                         },
     //IMAGEM
     image:{
         width:150,

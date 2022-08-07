@@ -13,6 +13,9 @@ export default() => {
     const [fosforo, setFosforo] = useState('');
     const [turbidez, setTurbidez] = useState('');
     const [solidos, setSolidos] = useState('');
+    const [namePoint, setNamePoint]=useState('')
+    const [responsible, setResponsible]= useState('')
+
     let pesoOd=0.17
     let pesoColiformes=0.17
     let pesoPh=0.12
@@ -45,7 +48,7 @@ export default() => {
     let valQiDifTemperatura=0
     let valQiFosforo=0
     let iqa=0
- 
+    
     const calcular=()=>{
        valColiformes=Math.log10(coli)
        valFosforo=fosforo*3.066
@@ -180,6 +183,10 @@ export default() => {
                 </View>
                 <ScrollView style={styles.areaScroll}>
                     <View style={styles.areaInfo}>
+                    <Text style={styles.inputText}>Nome do Ponto</Text>
+                    <TextInput style={styles.input} keyboardType='number-pad' value={namePoint} onChangeText={(t) => setNamePoint(t)}/>
+                    <Text style={styles.inputText}>Responsável</Text>
+                    <TextInput style={styles.input} keyboardType='number-pad' value={responsible} onChangeText={(t) => setResponsible(t)}/>
                     <Text style={styles.inputText}>Altitude(m)</Text>
                     <TextInput style={styles.input} keyboardType='number-pad' value={altitude} onChangeText={(t) => setAltitude(t)}/>
                     <Text style={styles.inputText}>Temperatura(°C)</Text>
